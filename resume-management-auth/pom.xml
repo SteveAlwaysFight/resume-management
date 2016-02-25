@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.baanyan</groupId>
+        <artifactId>resume-management</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>resume-management-auth</artifactId>
+    <packaging>jar</packaging>
+    <name>resume-management-auth</name>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+        <dependency>
+            <groupId>com.baanyan</groupId>
+            <artifactId>resume-management-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baanyan</groupId>
+            <artifactId>resume-management-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+</project>
