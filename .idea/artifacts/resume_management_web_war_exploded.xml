@@ -10,8 +10,8 @@
           <element id="archive" name="resume-management-admin-resume-1.0-SNAPSHOT.jar">
             <element id="module-output" name="resume-management-admin-resume" />
           </element>
-          <element id="archive" name="resume-management-domain-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="resume-management-domain" />
+          <element id="archive" name="resume-management-common-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="resume-management-common" />
           </element>
           <element id="archive" name="resume-management-user-resume-1.0-SNAPSHOT.jar">
             <element id="module-output" name="resume-management-user-resume" />
@@ -19,8 +19,8 @@
           <element id="archive" name="resume-management-auth-1.0-SNAPSHOT.jar">
             <element id="module-output" name="resume-management-auth" />
           </element>
-          <element id="archive" name="resume-management-common-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="resume-management-common" />
+          <element id="archive" name="resume-management-user-information-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="resume-management-user-information" />
           </element>
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:4.3.6.Final" />
           <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.1.3.GA" />

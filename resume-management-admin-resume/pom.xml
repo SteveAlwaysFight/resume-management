@@ -11,6 +11,7 @@
     <artifactId>resume-management-admin-resume</artifactId>
     <name>resume-management-admin-resume</name>
     <url>http://maven.apache.org</url>
+    <packaging>jar</packaging>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -20,7 +21,7 @@
         </dependency>
         <dependency>
             <groupId>com.baanyan</groupId>
-            <artifactId>resume-management-domain</artifactId>
+            <artifactId>resume-management-common</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

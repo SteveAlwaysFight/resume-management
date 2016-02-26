@@ -1,4 +1,4 @@
-package com.baanyan.exception;
+package com.baanyan.common.exception;
 
 import org.springframework.http.HttpStatus;
 

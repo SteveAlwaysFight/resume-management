@@ -15,11 +15,6 @@
     <dependencies>
         <dependency>
             <groupId>com.baanyan</groupId>
-            <artifactId>resume-management-domain</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.baanyan</groupId>
             <artifactId>resume-management-common</artifactId>
             <version>${project.version}</version>
         </dependency>

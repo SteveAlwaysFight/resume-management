@@ -8,8 +8,8 @@
         <artifactId>resume-management</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>resume-management-user-resume</artifactId>
-    <name>resume-management-user-resume</name>
+    <artifactId>resume-management-user-information</artifactId>
+    <name>resume-management-user-information</name>
     <url>http://maven.apache.org</url>
     <packaging>jar</packaging>
     <dependencies>

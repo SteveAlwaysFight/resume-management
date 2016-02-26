@@ -1,4 +1,4 @@
-package com.baanyan.message;
+package com.baanyan.common.message;
 
 import org.springframework.http.HttpStatus;
 

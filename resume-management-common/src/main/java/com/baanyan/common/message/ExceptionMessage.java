@@ -1,4 +1,4 @@
-package com.baanyan.message;
+package com.baanyan.common.message;
 
 import org.springframework.http.HttpStatus;
 
@@ -9,9 +9,11 @@ public class ExceptionMessage extends Message<String> {
 
     private String url;
 
-//    public ExceptionMessage(HttpStatus code,Exception e) {
-//        super(code,e.getMessage());
-//    }
+    public ExceptionMessage(HttpStatus code,String msg,String url){
+        super(code,msg);
+        this.url = url;
+    }
+
     public ExceptionMessage(HttpStatus code,Exception e,String url) {
         super(code,e.getMessage());
         this.url = url;

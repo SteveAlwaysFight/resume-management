@@ -128,11 +128,11 @@
         </dependency>
   </dependencies>
   <modules>
-    <module>resume-management-domain</module>
     <module>resume-management-auth</module>
     <module>resume-management-user-resume</module>
     <module>resume-management-admin-resume</module>
     <module>resume-management-web</module>
     <module>resume-management-common</module>
+      <module>resume-management-user-information</module>
   </modules>
 </project>

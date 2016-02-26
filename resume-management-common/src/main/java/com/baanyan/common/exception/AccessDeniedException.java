@@ -1,4 +1,4 @@
-package com.baanyan.exception;
+package com.baanyan.common.exception;
 
 import org.springframework.http.HttpStatus;
 
@@ -7,7 +7,6 @@ import org.springframework.http.HttpStatus;
  */
 public class AccessDeniedException extends BusinessException {
     public AccessDeniedException() {
-        super("You do not have permission to this resource!");
-        this.setCode(HttpStatus.FORBIDDEN);
+        super(HttpStatus.FORBIDDEN,"You do not have permission to this resource!");
     }
 }

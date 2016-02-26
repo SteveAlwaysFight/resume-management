@@ -10,6 +10,7 @@
   <artifactId>resume-management-common</artifactId>
   <name>resume-management-common</name>
   <url>http://maven.apache.org</url>
+  <packaging>jar</packaging>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>

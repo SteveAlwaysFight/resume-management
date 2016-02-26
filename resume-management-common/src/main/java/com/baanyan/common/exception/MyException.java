@@ -1,4 +1,4 @@
-package com.baanyan.exception;
+package com.baanyan.common.exception;
 
 /**
  * Created by steve on 2/23/16.

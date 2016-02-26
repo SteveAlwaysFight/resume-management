@@ -1,6 +1,10 @@
 ### Java template
 *.class
-
+# IDE setting file
+.idea/
+.project
+.settings
+.classpath
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
@@ -21,5 +25,5 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-.idea/
+
 # Created by .ignore support plugin (hsz.mobi)

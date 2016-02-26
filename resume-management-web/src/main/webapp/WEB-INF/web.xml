@@ -23,6 +23,17 @@
         <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
     </listener>
 
+    <!-- root path -->
+    <context-param>
+        <param-name>webAppRootKey</param-name>
+        <param-value>resume-management.root</param-value>
+    </context-param>
+    <listener>
+        <listener-class>
+            org.springframework.web.util.WebAppRootListener
+        </listener-class>
+    </listener>
+
     <servlet>
         <servlet-name>spring-dispatcher</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>

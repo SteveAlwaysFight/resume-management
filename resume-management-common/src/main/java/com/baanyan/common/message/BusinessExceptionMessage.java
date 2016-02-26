@@ -1,6 +1,6 @@
-package com.baanyan.message;
+package com.baanyan.common.message;
 
-import com.baanyan.exception.BusinessException;
+import com.baanyan.common.exception.BusinessException;
 
 /**
  * Created by steve on 2/25/16.
