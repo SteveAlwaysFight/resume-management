@@ -79,6 +79,9 @@ public class HibernateBaseGenericDAOImpl<T, PK extends Serializable> extends Hib
      * @see com.integration.framework.dao.IBaseGenericDAO#get(java.io.Serializable)
      */
     public T get(PK id) {
+        System.out.println("------------");
+        System.out.println(entityClass);
+        System.out.println("------------");
         return (T) getHibernateTemplate().get(entityClass, id);
     }
 

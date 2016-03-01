@@ -1,13 +1,12 @@
 package com.baanyan;
 
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  * Hello world!
- *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+@RestController
+public class App {
+    public static void main(String[] args) {
     }
 }

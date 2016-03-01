@@ -28,7 +28,7 @@
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 
         <!-- scan model package -->
-        <property name="packagesToScan" value="com.baanyan.model"/>
+        <property name="packagesToScan" value="com.baanyan"/>
         <!-- set dataSource -->
         <property name="dataSource" ref="serverHibernateDataSource"/>
         <property name="hibernateProperties">
