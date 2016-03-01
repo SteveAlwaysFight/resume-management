@@ -35,7 +35,6 @@
       <module name="resume-management-admin-resume" target="1.5" />
       <module name="resume-management-auth" target="1.5" />
       <module name="resume-management-common" target="1.5" />
-      <module name="resume-management-domain" target="1.5" />
       <module name="resume-management-user-information" target="1.5" />
       <module name="resume-management-user-resume" target="1.5" />
       <module name="resume-management-web" target="1.5" />
