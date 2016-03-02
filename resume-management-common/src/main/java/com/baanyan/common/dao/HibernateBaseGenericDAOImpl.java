@@ -12,6 +12,7 @@ package com.baanyan.common.dao;
  * Created by steve on 10/12/15.
  */
 
+import com.baanyan.common.model.BaseEntity;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.Criteria;
@@ -28,6 +29,8 @@ import org.springframework.stereotype.Repository;
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
+import java.sql.Timestamp;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -39,7 +42,7 @@ import java.util.Map;
  */
 @Repository("hibernateBaseGenericDao")
 @SuppressWarnings("all")
-public class HibernateBaseGenericDAOImpl<T, PK extends Serializable> extends HibernateDaoSupport implements IBaseGenericDAO<T, PK> {
+public class HibernateBaseGenericDAOImpl<T extends BaseEntity, PK extends Serializable> extends HibernateDaoSupport implements IBaseGenericDAO<T, PK> {
 
     private static Log logger = LogFactory.getLog(HibernateBaseGenericDAOImpl.class);
 
@@ -79,9 +82,6 @@ public class HibernateBaseGenericDAOImpl<T, PK extends Serializable> extends Hib
      * @see com.integration.framework.dao.IBaseGenericDAO#get(java.io.Serializable)
      */
     public T get(PK id) {
-        System.out.println("------------");
-        System.out.println(entityClass);
-        System.out.println("------------");
         return (T) getHibernateTemplate().get(entityClass, id);
     }
 
@@ -107,6 +107,7 @@ public class HibernateBaseGenericDAOImpl<T, PK extends Serializable> extends Hib
      */
     public void save(T entity) {
         try {
+            entity.setCreateTime(new Timestamp(new Date().getTime()));
             getHibernateTemplate().save(entity);
         } catch (DataAccessException e) {
             logger.error(e.getMessage(), e);
@@ -131,6 +132,7 @@ public class HibernateBaseGenericDAOImpl<T, PK extends Serializable> extends Hib
      */
     public void update(T entity) {
         try {
+            entity.setUpdateTime(new Timestamp(new Date().getTime()));
             getHibernateTemplate().update(entity);
         } catch (DataAccessException e) {
             logger.error(e.getMessage(), e);
