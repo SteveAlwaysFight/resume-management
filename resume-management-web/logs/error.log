@@ -1,0 +1,114 @@
+2016-03-02 03:07:22  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2016-03-02 03:07:22  [ main:107 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Wed Mar 02 03:07:22 EST 2016]; root of context hierarchy
+2016-03-02 03:07:22  [ main:148 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-context.xml]
+2016-03-02 03:07:22  [ main:261 ] - [ INFO ]  Loading XML bean definitions from URL [jar:file:/Users/steve/.m2/repository/com/baanyan/resume-management-common/1.0-SNAPSHOT/resume-management-common-1.0-SNAPSHOT.jar!/spring-context-common.xml]
+2016-03-02 03:07:22  [ main:320 ] - [ INFO ]  Loading XML bean definitions from URL [jar:file:/Users/steve/.m2/repository/com/baanyan/resume-management-common/1.0-SNAPSHOT/resume-management-common-1.0-SNAPSHOT.jar!/spring-hibernate.xml]
+2016-03-02 03:07:23  [ main:493 ] - [ INFO ]  Loading XML bean definitions from URL [jar:file:/Users/steve/.m2/repository/com/baanyan/resume-management-admin-resume/1.0-SNAPSHOT/resume-management-admin-resume-1.0-SNAPSHOT.jar!/spring-context-admin-resume.xml]
+2016-03-02 03:07:23  [ main:525 ] - [ INFO ]  Loading XML bean definitions from URL [jar:file:/Users/steve/.m2/repository/com/baanyan/resume-management-user-resume/1.0-SNAPSHOT/resume-management-user-resume-1.0-SNAPSHOT.jar!/spring-context-user-resume.xml]
+2016-03-02 03:07:23  [ main:566 ] - [ INFO ]  Loading XML bean definitions from URL [jar:file:/Users/steve/.m2/repository/com/baanyan/resume-management-user-information/1.0-SNAPSHOT/resume-management-user-information-1.0-SNAPSHOT.jar!/spring-context-user-information.xml]
+2016-03-02 03:07:23  [ main:627 ] - [ INFO ]  Loading XML bean definitions from URL [jar:file:/Users/steve/.m2/repository/com/baanyan/resume-management-auth/1.0-SNAPSHOT/resume-management-auth-1.0-SNAPSHOT.jar!/spring-context-auth.xml]
+2016-03-02 03:07:23  [ main:640 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-mvc.xml]
+2016-03-02 03:07:23  [ main:890 ] - [ INFO ]  Loading properties file from class path resource [hibernate-development.properties]
+2016-03-02 03:07:23  [ main:897 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-03-02 03:07:23  [ MLog-Init-Reporter:1328 ] - [ INFO ]  MLog clients using slf4j logging.
+2016-03-02 03:07:24  [ main:1488 ] - [ INFO ]  Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-03-02 03:07:24  [ main:1923 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-03-02 03:07:24  [ main:1930 ] - [ INFO ]  HHH000412: Hibernate Core {4.3.6.Final}
+2016-03-02 03:07:24  [ main:2026 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2016-03-02 03:07:24  [ main:2030 ] - [ INFO ]  HHH000021: Bytecode provider name : javassist
+2016-03-02 03:07:24  [ main:2221 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge13m9ff324i01ezc6ir|2b3fd4d2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge13m9ff324i01ezc6ir|2b3fd4d2, idleConnectionTestPeriod -> 0, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3306/hibt, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 40, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-03-02 03:07:25  [ main:2912 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-03-02 03:07:25  [ main:3074 ] - [ INFO ]  HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-02 03:07:25  [ main:3077 ] - [ INFO ]  HHH000397: Using ASTQueryTranslatorFactory
+2016-03-02 03:07:25  [ main:3135 ] - [ INFO ]  Hibernate Validator 4.1.0.Final
+2016-03-02 03:07:25  [ main:3141 ] - [ INFO ]  Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2016-03-02 03:07:25  [ main:3237 ] - [ WARN ]  HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2016-03-02 03:07:25  [ main:3430 ] - [ INFO ]  HHH000228: Running hbm2ddl schema update
+2016-03-02 03:07:25  [ main:3431 ] - [ INFO ]  HHH000102: Fetching database metadata
+2016-03-02 03:07:26  [ main:3437 ] - [ INFO ]  HHH000396: Updating schema
+2016-03-02 03:07:26  [ main:3466 ] - [ INFO ]  HHH000261: Table found: hibt.element
+2016-03-02 03:07:26  [ main:3467 ] - [ INFO ]  HHH000037: Columns: [createtime, id, updatetime]
+2016-03-02 03:07:26  [ main:3468 ] - [ INFO ]  HHH000108: Foreign keys: []
+2016-03-02 03:07:26  [ main:3473 ] - [ INFO ]  HHH000126: Indexes: [primary]
+2016-03-02 03:07:26  [ main:3486 ] - [ INFO ]  HHH000261: Table found: hibt.user
+2016-03-02 03:07:26  [ main:3486 ] - [ INFO ]  HHH000037: Columns: [createtime, id, updatetime]
+2016-03-02 03:07:26  [ main:3486 ] - [ INFO ]  HHH000108: Foreign keys: []
+2016-03-02 03:07:26  [ main:3487 ] - [ INFO ]  HHH000126: Indexes: [primary]
+2016-03-02 03:07:26  [ main:3508 ] - [ INFO ]  HHH000261: Table found: hibt.user_information
+2016-03-02 03:07:26  [ main:3509 ] - [ INFO ]  HHH000037: Columns: [createtime, firstname, user_id, id, updatetime, lastname]
+2016-03-02 03:07:26  [ main:3509 ] - [ INFO ]  HHH000108: Foreign keys: [fk_1vcrp2ijfleyers55myr1j0tf]
+2016-03-02 03:07:26  [ main:3509 ] - [ INFO ]  HHH000126: Indexes: [fk_1vcrp2ijfleyers55myr1j0tf, primary]
+2016-03-02 03:07:26  [ main:3511 ] - [ INFO ]  HHH000232: Schema update complete
+2016-03-02 03:07:26  [ main:3596 ] - [ INFO ]  Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource[ identityToken -> 1hge13m9ff324i01ezc6ir|2b3fd4d2, dataSourceName -> 1hge13m9ff324i01ezc6ir|2b3fd4d2 ]] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-02 03:07:26  [ main:3940 ] - [ INFO ]  Mapped "{[/test/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.baanyan.common.message.Message> com.baanyan.common.HeartBeat.throwException()
+2016-03-02 03:07:26  [ main:3942 ] - [ INFO ]  Mapped "{[/user_infos/{user_id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.baanyan.user_information.dto.UserInformationResponse> com.baanyan.user_information.controller.UserInformationController.getUserInformation(java.lang.String)
+2016-03-02 03:07:26  [ main:3942 ] - [ INFO ]  Mapped "{[/user_infos/{user_id}],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.baanyan.user_information.dto.UserInformationResponse> com.baanyan.user_information.controller.UserInformationController.createUserInformation(java.lang.String,com.baanyan.user_information.dto.CreateUserInformationRequest)
+2016-03-02 03:07:26  [ main:3971 ] - [ INFO ]  Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2016-03-02 03:07:26  [ main:4390 ] - [ INFO ]  Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Mar 02 03:07:22 EST 2016]; root of context hierarchy
+2016-03-02 03:07:27  [ main:4466 ] - [ INFO ]  Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Mar 02 03:07:22 EST 2016]; root of context hierarchy
+2016-03-02 03:07:27  [ main:4528 ] - [ INFO ]  Detected @ExceptionHandler methods in globalExceptionHandler
+2016-03-02 03:07:27  [ main:4575 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 4563 ms
+2016-03-02 03:07:27  [ main:4725 ] - [ INFO ]  FrameworkServlet 'spring-dispatcher': initialization started
+2016-03-02 03:07:27  [ main:4732 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Wed Mar 02 03:07:27 EST 2016]; parent: Root WebApplicationContext
+2016-03-02 03:07:27  [ main:4734 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+2016-03-02 03:07:27  [ main:4804 ] - [ INFO ]  FrameworkServlet 'spring-dispatcher': initialization completed in 78 ms
+2016-03-02 03:08:49  [ qtp1658020779-30:87004 ] - [ INFO ]  SystemLog{userName='null', userId='null', exeOperation='createUserInformation', createTime=null}
+2016-03-02 03:08:50  [ pool-1-thread-1:87511 ] - [ INFO ]  SystemLog{userName='null', userId='null', exeOperation='createUserInformation', createTime=null}
+2016-03-02 03:09:45  [ Thread-1:142984 ] - [ INFO ]  Closing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Wed Mar 02 03:07:27 EST 2016]; parent: Root WebApplicationContext
+2016-03-02 03:10:24  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2016-03-02 03:10:24  [ main:117 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Wed Mar 02 03:10:24 EST 2016]; root of context hierarchy
+2016-03-02 03:10:24  [ main:153 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-context.xml]
+2016-03-02 03:10:24  [ main:258 ] - [ INFO ]  Loading XML bean definitions from URL [jar:file:/Users/steve/.m2/repository/com/baanyan/resume-management-common/1.0-SNAPSHOT/resume-management-common-1.0-SNAPSHOT.jar!/spring-context-common.xml]
+2016-03-02 03:10:24  [ main:319 ] - [ INFO ]  Loading XML bean definitions from URL [jar:file:/Users/steve/.m2/repository/com/baanyan/resume-management-common/1.0-SNAPSHOT/resume-management-common-1.0-SNAPSHOT.jar!/spring-hibernate.xml]
+2016-03-02 03:10:25  [ main:473 ] - [ INFO ]  Loading XML bean definitions from URL [jar:file:/Users/steve/.m2/repository/com/baanyan/resume-management-admin-resume/1.0-SNAPSHOT/resume-management-admin-resume-1.0-SNAPSHOT.jar!/spring-context-admin-resume.xml]
+2016-03-02 03:10:25  [ main:486 ] - [ INFO ]  Loading XML bean definitions from URL [jar:file:/Users/steve/.m2/repository/com/baanyan/resume-management-user-resume/1.0-SNAPSHOT/resume-management-user-resume-1.0-SNAPSHOT.jar!/spring-context-user-resume.xml]
+2016-03-02 03:10:25  [ main:524 ] - [ INFO ]  Loading XML bean definitions from URL [jar:file:/Users/steve/.m2/repository/com/baanyan/resume-management-user-information/1.0-SNAPSHOT/resume-management-user-information-1.0-SNAPSHOT.jar!/spring-context-user-information.xml]
+2016-03-02 03:10:25  [ main:566 ] - [ INFO ]  Loading XML bean definitions from URL [jar:file:/Users/steve/.m2/repository/com/baanyan/resume-management-auth/1.0-SNAPSHOT/resume-management-auth-1.0-SNAPSHOT.jar!/spring-context-auth.xml]
+2016-03-02 03:10:25  [ main:583 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-mvc.xml]
+2016-03-02 03:10:25  [ main:841 ] - [ INFO ]  Loading properties file from class path resource [hibernate-development.properties]
+2016-03-02 03:10:25  [ main:849 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-03-02 03:10:25  [ MLog-Init-Reporter:1114 ] - [ INFO ]  MLog clients using slf4j logging.
+2016-03-02 03:10:25  [ main:1213 ] - [ INFO ]  Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-03-02 03:10:26  [ main:1521 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-03-02 03:10:26  [ main:1528 ] - [ INFO ]  HHH000412: Hibernate Core {4.3.6.Final}
+2016-03-02 03:10:26  [ main:1536 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2016-03-02 03:10:26  [ main:1539 ] - [ INFO ]  HHH000021: Bytecode provider name : javassist
+2016-03-02 03:10:26  [ main:1712 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge13m9ff360se1as75yi|70ba01be, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge13m9ff360se1as75yi|70ba01be, idleConnectionTestPeriod -> 0, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3306/hibt, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 40, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-03-02 03:10:26  [ main:2191 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-03-02 03:10:26  [ main:2339 ] - [ INFO ]  HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-02 03:10:26  [ main:2343 ] - [ INFO ]  HHH000397: Using ASTQueryTranslatorFactory
+2016-03-02 03:10:27  [ main:2389 ] - [ INFO ]  Hibernate Validator 4.1.0.Final
+2016-03-02 03:10:27  [ main:2397 ] - [ INFO ]  Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2016-03-02 03:10:27  [ main:2486 ] - [ WARN ]  HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2016-03-02 03:10:27  [ main:2653 ] - [ INFO ]  HHH000228: Running hbm2ddl schema update
+2016-03-02 03:10:27  [ main:2653 ] - [ INFO ]  HHH000102: Fetching database metadata
+2016-03-02 03:10:27  [ main:2658 ] - [ INFO ]  HHH000396: Updating schema
+2016-03-02 03:10:27  [ main:2684 ] - [ INFO ]  HHH000261: Table found: hibt.element
+2016-03-02 03:10:27  [ main:2685 ] - [ INFO ]  HHH000037: Columns: [createtime, id, updatetime]
+2016-03-02 03:10:27  [ main:2685 ] - [ INFO ]  HHH000108: Foreign keys: []
+2016-03-02 03:10:27  [ main:2685 ] - [ INFO ]  HHH000126: Indexes: [primary]
+2016-03-02 03:10:27  [ main:2699 ] - [ INFO ]  HHH000261: Table found: hibt.user
+2016-03-02 03:10:27  [ main:2700 ] - [ INFO ]  HHH000037: Columns: [createtime, id, updatetime]
+2016-03-02 03:10:27  [ main:2700 ] - [ INFO ]  HHH000108: Foreign keys: []
+2016-03-02 03:10:27  [ main:2701 ] - [ INFO ]  HHH000126: Indexes: [primary]
+2016-03-02 03:10:27  [ main:2721 ] - [ INFO ]  HHH000261: Table found: hibt.user_information
+2016-03-02 03:10:27  [ main:2724 ] - [ INFO ]  HHH000037: Columns: [createtime, firstname, user_id, id, updatetime, lastname]
+2016-03-02 03:10:27  [ main:2727 ] - [ INFO ]  HHH000108: Foreign keys: [fk_1vcrp2ijfleyers55myr1j0tf]
+2016-03-02 03:10:27  [ main:2727 ] - [ INFO ]  HHH000126: Indexes: [fk_1vcrp2ijfleyers55myr1j0tf, primary]
+2016-03-02 03:10:27  [ main:2728 ] - [ INFO ]  HHH000232: Schema update complete
+2016-03-02 03:10:27  [ main:2812 ] - [ INFO ]  Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource[ identityToken -> 1hge13m9ff360se1as75yi|70ba01be, dataSourceName -> 1hge13m9ff360se1as75yi|70ba01be ]] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-02 03:10:27  [ main:3168 ] - [ INFO ]  Mapped "{[/test/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.baanyan.common.message.Message> com.baanyan.common.HeartBeat.throwException()
+2016-03-02 03:10:27  [ main:3169 ] - [ INFO ]  Mapped "{[/user_infos/{user_id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.baanyan.user_information.dto.UserInformationResponse> com.baanyan.user_information.controller.UserInformationController.getUserInformation(java.lang.String)
+2016-03-02 03:10:27  [ main:3170 ] - [ INFO ]  Mapped "{[/user_infos/{user_id}],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.baanyan.user_information.dto.UserInformationResponse> com.baanyan.user_information.controller.UserInformationController.createUserInformation(java.lang.String,com.baanyan.user_information.dto.CreateUserInformationRequest)
+2016-03-02 03:10:27  [ main:3188 ] - [ INFO ]  Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2016-03-02 03:10:28  [ main:3584 ] - [ INFO ]  Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Mar 02 03:10:24 EST 2016]; root of context hierarchy
+2016-03-02 03:10:28  [ main:3657 ] - [ INFO ]  Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Mar 02 03:10:24 EST 2016]; root of context hierarchy
+2016-03-02 03:10:28  [ main:3705 ] - [ INFO ]  Detected @ExceptionHandler methods in globalExceptionHandler
+2016-03-02 03:10:28  [ main:3758 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3752 ms
+2016-03-02 03:10:28  [ main:3891 ] - [ INFO ]  FrameworkServlet 'spring-dispatcher': initialization started
+2016-03-02 03:10:28  [ main:3896 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Wed Mar 02 03:10:28 EST 2016]; parent: Root WebApplicationContext
+2016-03-02 03:10:28  [ main:3898 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+2016-03-02 03:10:28  [ main:3959 ] - [ INFO ]  FrameworkServlet 'spring-dispatcher': initialization completed in 67 ms
+2016-03-02 03:10:37  [ qtp1658020779-28:12414 ] - [ INFO ]  SystemLog{userName='null', userId='null', exeOperation='createUserInformation', createTime=null}
+2016-03-02 03:10:37  [ pool-1-thread-1:12918 ] - [ INFO ]  SystemLog{userName='null', userId='null', exeOperation='createUserInformation', createTime=null}
+2016-03-02 03:11:39  [ Thread-1:74563 ] - [ INFO ]  Closing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Wed Mar 02 03:10:28 EST 2016]; parent: Root WebApplicationContext

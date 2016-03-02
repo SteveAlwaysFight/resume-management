@@ -14,4 +14,12 @@
     <context:component-scan base-package="com.baanyan.common"/>
     <!-- open aop autoproxy -->
     <aop:aspectj-autoproxy/>
+    <!--<bean id="logAspect" class="com.baanyan.common.log.LogAspect"/>-->
+    <!--<aop:config>-->
+        <!--<aop:aspect ref="logAspect">-->
+            <!--<aop:pointcut id="logPointCut" expression="execution(* com.baanyan.*.controller.*Controller.*(..))"/>-->
+            <!--<aop:around pointcut-ref="logPointCut" method="doSystemLog"/>-->
+        <!--</aop:aspect>-->
+    <!--</aop:config>-->
+    <bean id="logAspect" class="com.baanyan.common.logz.LogAspect"/>
 </beans>
