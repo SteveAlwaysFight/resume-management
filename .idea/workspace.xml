@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2eb897cb-105e-400f-900f-0359478ccc78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resume-management-common/src/main/java/com/baanyan/common/util/ContextUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resume-management-common/src/main/java/com/baanyan/common/log/ControllerLog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resume-management-common/src/main/java/com/baanyan/common/log/LogAspect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resume-management-common/src/main/java/com/baanyan/common/logz/LogAspect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resume-management-common/src/main/java/com/baanyan/common/log/SystemLog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resume-management-common/src/main/java/com/baanyan/common/log/SystemLogService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resume-management-common/src/main/java/com/baanyan/common/log/SystemLogServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resume-management-common/src/main/java/com/baanyan/common/log/SystemLogServiceImpll.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resume-management-common/src/main/resources/hibernate-develop.properties" afterPath="$PROJECT_DIR$/resume-management-common/src/main/resources/hibernate-development.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume-management-user-information/src/main/java/com/baanyan/user_information/controller/UserInformationController.java" afterPath="$PROJECT_DIR$/resume-management-user-information/src/main/java/com/baanyan/user_information/controller/UserInformationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume-management-common/pom.xml" afterPath="$PROJECT_DIR$/resume-management-common/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume-management-admin-resume/resume-management-admin-resume.iml" afterPath="$PROJECT_DIR$/resume-management-admin-resume/resume-management-admin-resume.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume-management-auth/resume-management-auth.iml" afterPath="$PROJECT_DIR$/resume-management-auth/resume-management-auth.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume-management-common/resume-management-common.iml" afterPath="$PROJECT_DIR$/resume-management-common/resume-management-common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume-management-user-information/resume-management-user-information.iml" afterPath="$PROJECT_DIR$/resume-management-user-information/resume-management-user-information.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume-management-user-resume/resume-management-user-resume.iml" afterPath="$PROJECT_DIR$/resume-management-user-resume/resume-management-user-resume.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/resume_management_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/resume_management_web_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume-management-common/src/main/resources/spring-context-common.xml" afterPath="$PROJECT_DIR$/resume-management-common/src/main/resources/spring-context-common.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="2eb897cb-105e-400f-900f-0359478ccc78" name="Default" comment="" />
     <ignored path="resume-management.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/resume-management-admin-resume/target/" />
@@ -773,12 +753,12 @@
       <created>1456861438196</created>
       <option name="number" value="Default" />
       <updated>1456861438196</updated>
-      <workItem from="1456861439959" duration="26475000" />
+      <workItem from="1456861439959" duration="26521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26475000" />
+    <option name="totallyTimeSpent" value="26521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
