@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="resume-management-web:war">
-    <output-path>$PROJECT_DIR$/resume-management-web/target</output-path>
-    <root id="archive" name="resume-management-web.war">
-      <element id="artifact" artifact-name="resume-management-web:war exploded" />
-    </root>
-  </artifact>
-</component>
