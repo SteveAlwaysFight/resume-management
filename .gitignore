@@ -3,6 +3,7 @@
 # IDE setting file
 .idea/
 .project
+.settings/
 */.settings/
 .classpath
 # Mobile Tools for Java (J2ME)
