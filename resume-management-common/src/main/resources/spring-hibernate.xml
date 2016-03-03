@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
@@ -11,7 +12,7 @@
         </property>
     </bean>
 
-    <!-- 使用C3P0数据源，MySQL数据库 connection pool -->
+    <!--use c3p0 datasource-->
     <bean id="serverHibernateDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close">
         <!-- MySQL5 -->
@@ -26,7 +27,6 @@
     </bean>
     <!-- session factory -->
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
-
         <!-- scan model package -->
         <property name="packagesToScan" value="com.baanyan"/>
         <!-- set dataSource -->
