@@ -9,7 +9,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 
-
 /**
  * Created by steve on 3/2/16.
  */
@@ -33,7 +32,7 @@ public class SystemLogServiceImpl implements SystemLogService {
         }
     }
 
-    public void init() {
+    public void init(){
         ExecutorService service = Executors.newCachedThreadPool();
         service.submit(new Consumer());
         service.submit(new Consumer());
@@ -61,6 +60,4 @@ public class SystemLogServiceImpl implements SystemLogService {
             consume();
         }
     }
-
-
 }
