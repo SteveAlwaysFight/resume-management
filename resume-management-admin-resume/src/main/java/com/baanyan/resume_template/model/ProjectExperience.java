@@ -1,4 +1,4 @@
-package com.baanyan.user_resume.model;
+package com.baanyan.resume_template.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -18,7 +18,7 @@ public class ProjectExperience implements Serializable{
 	private String ProjectName;
 	private String Company; 
 	private String ProjectSummary;
-	private List<Responsibility> responsibilityList = new ArrayList<>();
+	private List<Responsibility> responsibilityList = new ArrayList<Responsibility>();
 	private Date DateStarted;
 	private Date DateEnded;
 }
