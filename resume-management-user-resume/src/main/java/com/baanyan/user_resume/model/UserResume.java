@@ -7,6 +7,7 @@ import javax.persistence.Table;
 
 import com.baanyan.common.model.BaseEntity;
 import com.baanyan.common.model.User;
+import com.baanyan.resume_template.model.ProjectExperience;
 
 
 /**
