@@ -18,6 +18,11 @@
             <artifactId>resume-management-common</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.baanyan</groupId>
+            <artifactId>resume-management-admin-resume</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
     <properties>
     	<maven.compiler.source>1.8</maven.compiler.source>
