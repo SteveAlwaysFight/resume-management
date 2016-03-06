@@ -1,5 +1,7 @@
 package com.baanyan.admin_resume.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -12,8 +14,12 @@ import com.baanyan.common.model.BaseEntity;
 
 @Entity
 @Table(name="admin_resume_category")
-public class Category extends BaseEntity{
+public class Category extends BaseEntity implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8178494702439240589L;
 	private String CategoryName;
 
 	@Column

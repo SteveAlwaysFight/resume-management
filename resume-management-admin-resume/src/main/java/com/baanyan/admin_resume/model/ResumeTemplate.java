@@ -1,6 +1,6 @@
 package com.baanyan.admin_resume.model;
 
-import java.util.List;
+import java.util.Set;
 
 import com.baanyan.common.model.User;
 import com.baanyan.admin_resume.model.PersonalSummary;
@@ -14,7 +14,7 @@ public class ResumeTemplate {
 	
 	private User user;
 	private PersonalSummary summary;
-	private List<String> technical_skills;
+	private Set<keyword> technical_skills;
 	private ProjectExperience project_experience;
 	
 }

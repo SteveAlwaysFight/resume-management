@@ -1,5 +1,6 @@
 package com.baanyan.admin_resume.model;
 
+import java.io.Serializable;
 import java.util.Set;
 
 
@@ -19,8 +20,12 @@ import com.baanyan.admin_resume.model.keyword;
 @Entity
 @Table(name="admin_resume_element")
 @Inheritance(strategy=InheritanceType.TABLE_PER_CLASS)
-public class Element extends BaseEntity {
+public class Element extends BaseEntity implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5487748708678668157L;
 	private Set<keyword> keywords;
 	
 	@ManyToMany(mappedBy = "Element")	
