@@ -22,7 +22,6 @@ public class Category extends BaseEntity implements Serializable {
 	private static final long serialVersionUID = -8178494702439240589L;
 	private String CategoryName;
 
-	@Column
 	public String getTypeName() {
 		return CategoryName;
 	}

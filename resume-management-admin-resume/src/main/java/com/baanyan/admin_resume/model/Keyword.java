@@ -6,6 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import com.baanyan.common.model.BaseEntity;
 import com.baanyan.admin_resume.model.Category;
@@ -16,16 +17,17 @@ import com.baanyan.admin_resume.model.Category;
 
 @Entity
 @Table(name="admin_resume_keyword")
-public class keyword extends BaseEntity implements Serializable{
+public class Keyword extends BaseEntity implements Serializable{
 	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -4181328155358306905L;
+	@Transient
 	private Category Category;
 
-	@Column
-	@ManyToOne
+//	@Column
+//	@ManyToOne
 	public Category getCategory() {
 		return Category;
 	}

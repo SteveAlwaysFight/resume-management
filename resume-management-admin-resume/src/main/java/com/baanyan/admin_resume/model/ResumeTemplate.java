@@ -14,7 +14,7 @@ public class ResumeTemplate {
 	
 	private User user;
 	private PersonalSummary summary;
-	private Set<keyword> technical_skills;
+	private Set<Keyword> technical_skills;
 	private ProjectExperience project_experience;
 	
 }

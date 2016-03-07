@@ -11,7 +11,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import com.baanyan.common.model.BaseEntity;
-import com.baanyan.admin_resume.model.keyword;
+import com.baanyan.admin_resume.model.Keyword;
 
 /**
  * Created by Bowen Yao on 3/4/2016
@@ -26,15 +26,16 @@ public class Element extends BaseEntity implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = -5487748708678668157L;
-	private Set<keyword> keywords;
+
+	@ManyToMany	
+	private Set<Keyword> keywords;
 	
-	@ManyToMany(mappedBy = "Element")	
-	public Set<keyword> getKeywords() {
+	public Set<Keyword> getKeywords() {
 		return keywords;
 	}
 
 
-	public void setKeywords(Set<keyword> keywords) {
+	public void setKeywords(Set<Keyword> keywords) {
 		this.keywords = keywords;
 	}
 	
