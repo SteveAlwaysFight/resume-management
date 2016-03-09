@@ -1,4 +1,4 @@
-package com.baanyan.admin_resume.service;
+package com.baanyan.admin_resume.service.resumebuilder;
 
 
 

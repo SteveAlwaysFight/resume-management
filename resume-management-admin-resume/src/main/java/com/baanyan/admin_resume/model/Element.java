@@ -30,13 +30,24 @@ public class Element extends BaseEntity implements Serializable {
 	@ManyToMany	
 	private Set<Keyword> keywords;
 	
+	private String content;
+	
 	public Set<Keyword> getKeywords() {
 		return keywords;
 	}
-
-
+	
 	public void setKeywords(Set<Keyword> keywords) {
 		this.keywords = keywords;
 	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+	
+	
 	
 }

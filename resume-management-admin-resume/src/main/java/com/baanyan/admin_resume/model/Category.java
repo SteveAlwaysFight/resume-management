@@ -2,7 +2,6 @@ package com.baanyan.admin_resume.model;
 
 import java.io.Serializable;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
@@ -20,14 +19,14 @@ public class Category extends BaseEntity implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = -8178494702439240589L;
-	private String CategoryName;
-
-	public String getTypeName() {
-		return CategoryName;
+	private String categoryName;
+	
+	public String getCategoryName() {
+		return categoryName;
+	}
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
 	}
 
-	public void setTypeName(String typeName) {
-		CategoryName = typeName;
-	}
 	
 }

@@ -15,7 +15,6 @@ import com.baanyan.common.model.BaseEntity;
 public class ProjectSummary extends BaseEntity {
 	
 	private String projectName;
-	private String content;
 	
 	@Column
 	public String getProjectName() {
@@ -25,12 +24,5 @@ public class ProjectSummary extends BaseEntity {
 		this.projectName = projectName;
 	}
 	
-	@Column
-	public String getContent() {
-		return content;
-	}
-	public void setContent(String content) {
-		this.content = content;
-	}
 	
 }

@@ -13,7 +13,7 @@ import java.util.HashMap;
  * Create by Bowen Yao on 3/3/2016
  */
 
-public class ProjectExperience {
+public class ProjectExperience extends Element {
 	
 	private Company company;
 	private Date startDate;

@@ -16,17 +16,6 @@ public class Responsibility extends Element implements Serializable {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 2224053594232339266L;
-	private String content;
-
-	@Column
-	public String getContent() {
-		return content;
-	}
-
-	public void setContent(String content) {
-		this.content = content;
-	}
-	
+	private static final long serialVersionUID = 2224053594232339266L;	
 	
 }

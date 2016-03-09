@@ -21,15 +21,5 @@ public class PersonalSummary extends Element implements Serializable {
 	 */
 	private static final long serialVersionUID = 8173421307362984455L;
 
-	public String getContent() {
-		return content;
-	}
-	
-	@Column
-	public void setContent(String content) {
-		this.content = content;
-	}
-
-	private String content;
 	
 }

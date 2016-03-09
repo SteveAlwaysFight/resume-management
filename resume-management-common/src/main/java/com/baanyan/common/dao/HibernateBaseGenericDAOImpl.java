@@ -36,9 +36,9 @@ import java.util.Map;
 
 
 /**
- * @param <T>  实体类
- * @param <PK> 主键类，必须实现Serializable接口
- * @ClassName：HibernateBaseGenericDAOImpl
+ * @param <T>  瀹炰綋绫�
+ * @param <PK> 涓婚敭绫伙紝蹇呴』瀹炵幇Serializable鎺ュ彛
+ * @ClassName锛欻ibernateBaseGenericDAOImpl
  */
 @Repository("hibernateBaseGenericDao")
 @SuppressWarnings("all")
@@ -51,7 +51,7 @@ public class HibernateBaseGenericDAOImpl<T extends BaseEntity, PK extends Serial
 //    SessionFactory sessionFactory;
 
     /**
-     * 构造方法，根据实例类自动获取实体类类型
+     * 鏋勯�犳柟娉曪紝鏍规嵁瀹炰緥绫昏嚜鍔ㄨ幏鍙栧疄浣撶被绫诲瀷
      */
     @Autowired
     public HibernateBaseGenericDAOImpl(SessionFactory sessionFactory) {
@@ -108,6 +108,7 @@ public class HibernateBaseGenericDAOImpl<T extends BaseEntity, PK extends Serial
     public void save(T entity) {
         try {
             entity.setCreateTime(new Timestamp(new Date().getTime()));
+            entity.setUpdateTime(new Timestamp(new Date().getTime()));
             getHibernateTemplate().save(entity);
         } catch (DataAccessException e) {
             logger.error(e.getMessage(), e);
