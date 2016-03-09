@@ -8,10 +8,20 @@ import com.baanyan.admin_resume.model.Category;
 
 public class CategoryResponse {
 	
+	private String categoryID;
 	private String categoryName;
 	
 	public CategoryResponse(Category category) {
+		this.categoryID = category.getId();
 		this.categoryName = category.getCategoryName();
+	}	
+	
+	public String getCategoryID() {
+		return categoryID;
+	}
+
+	public void setCategoryID(String categoryID) {
+		this.categoryID = categoryID;
 	}
 
 	public String getCategoryName() {

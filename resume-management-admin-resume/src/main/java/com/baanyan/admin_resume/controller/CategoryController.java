@@ -1,5 +1,8 @@
 package com.baanyan.admin_resume.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -50,6 +53,16 @@ public class CategoryController {
 	public ResponseEntity<CategoryResponse> getCategory(@PathVariable("categoryID") String categoryID) {
 		Category category = categoryService.getCategorybyID(categoryID);
 		return new ResponseEntity<CategoryResponse>(new CategoryResponse(category), HttpStatus.OK);
+	}
+	
+	@RequestMapping(value = "/admin_resume_categories", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<List<CategoryResponse>> getAllCategory() {
+		List<Category> allCategories = categoryService.getAllCategory();
+		List<CategoryResponse> allCategoryResponses = new ArrayList<CategoryResponse>();
+		for(Category category : allCategories) {
+			allCategoryResponses.add(new CategoryResponse(category));
+		}
+		return new ResponseEntity<List<CategoryResponse>>(allCategoryResponses, HttpStatus.OK);
 	}
 	
 }

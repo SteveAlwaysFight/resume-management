@@ -1,5 +1,7 @@
 package com.baanyan.admin_resume.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -24,6 +26,7 @@ public class CategoryServiceImpl extends BaseGenericServiceImpl<Category, String
 		Category category = new Category();
 		category.setCategoryName(request.getCategoryName());
 		categoryDao.save(category);
+		category = categoryDao.getbyParam("categoryName", request.getCategoryName());
 		return category;
 	}
 	
@@ -46,6 +49,12 @@ public class CategoryServiceImpl extends BaseGenericServiceImpl<Category, String
 		Category category = new Category();
 		category = categoryDao.get(CategoryID);
 		return category;
+	}
+
+	public List<Category> getAllCategory() {
+		// TODO Auto-generated method stub
+		List<Category> categories = categoryDao.loadAll();
+		return categories;
 	}
 
 }
