@@ -2,11 +2,12 @@ package com.baanyan.admin_resume.model;
 
 import java.io.Serializable;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
 
 import com.baanyan.common.model.BaseEntity;
 import com.baanyan.admin_resume.model.Address;
@@ -22,16 +23,17 @@ public class Company extends BaseEntity implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = -9103797990532283926L;
-	private String CompanyName;
+	private String companyName;
 
 	@OneToOne
+	@Cascade(value= {CascadeType.SAVE_UPDATE, CascadeType.DELETE})
 	private Address address;
 	
 	public String getCompanyName() {
-		return CompanyName;
+		return companyName;
 	}
 	public void setCompanyName(String companyName) {
-		CompanyName = companyName;
+		this.companyName = companyName;
 	}
 	
 	public Address getAddress() {

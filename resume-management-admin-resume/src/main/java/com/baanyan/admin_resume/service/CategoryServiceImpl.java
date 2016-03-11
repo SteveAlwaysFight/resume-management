@@ -26,13 +26,11 @@ public class CategoryServiceImpl extends BaseGenericServiceImpl<Category, String
 		Category category = new Category();
 		category.setCategoryName(request.getCategoryName());
 		categoryDao.save(category);
-		category = categoryDao.getbyParam("categoryName", request.getCategoryName());
 		return category;
 	}
 	
 	public void deleteCategory(String CategoryID) {
-		Category category = new Category();
-		category = categoryDao.get(CategoryID);
+		Category category = categoryDao.get(CategoryID);
 		categoryDao.delete(category);
 	}
 
@@ -46,15 +44,57 @@ public class CategoryServiceImpl extends BaseGenericServiceImpl<Category, String
 
 	public Category getCategorybyID(String CategoryID) {
 		// TODO Auto-generated method stub
-		Category category = new Category();
-		category = categoryDao.get(CategoryID);
+		Category category = categoryDao.get(CategoryID);
 		return category;
 	}
 
-	public List<Category> getAllCategory() {
+	public List<Category> getAllCategories() {
 		// TODO Auto-generated method stub
-		List<Category> categories = categoryDao.loadAll();
-		return categories;
+		return categoryDao.loadAll();
 	}
+
+	@Override
+	public void delete(Category entity) {
+		// TODO Auto-generated method stub
+		categoryDao.delete(entity);
+	}
+
+	@Override
+	public Category get(String id) {
+		// TODO Auto-generated method stub
+		return categoryDao.get(id);
+	}
+
+	@Override
+	public Category load(String id) {
+		// TODO Auto-generated method stub
+		return categoryDao.load(id);
+	}
+
+	@Override
+	public List<Category> loadAll() {
+		// TODO Auto-generated method stub
+		return categoryDao.loadAll();
+	}
+
+	@Override
+	public void save(Category entity) {
+		// TODO Auto-generated method stub
+		categoryDao.save(entity);
+	}
+
+	@Override
+	public void saveOrUpdate(Category entity) {
+		// TODO Auto-generated method stub
+		categoryDao.saveOrUpdate(entity);
+	}
+
+	@Override
+	public void update(Category entity) {
+		// TODO Auto-generated method stub
+		categoryDao.update(entity);
+	}
+	
+	
 
 }

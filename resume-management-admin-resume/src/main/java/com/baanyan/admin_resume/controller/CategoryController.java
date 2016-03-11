@@ -28,24 +28,9 @@ public class CategoryController {
 	@Autowired
 	private CategoryService categoryService;
 	
-	/**
-	 * 
-	 */
 	@RequestMapping(value = "/admin_resume_categories",method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<CategoryResponse> createCategory(@RequestBody CategoryRequest request) {
 		Category category = categoryService.createCategory(request);
-		return new ResponseEntity<CategoryResponse>(new CategoryResponse(category), HttpStatus.CREATED);
-	}
-	
-	@RequestMapping(value = "/admin_resume_categories/{categoryID}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<CategoryResponse> deleteCategory(@PathVariable("categoryID") String categoryID) {
-		categoryService.deleteCategory(categoryID);
-		return new ResponseEntity<CategoryResponse>(HttpStatus.NO_CONTENT);
-	}
-	
-	@RequestMapping(value = "/admin_resume_categories/{categoryID}", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<CategoryResponse> updateCategory(@PathVariable("categoryID") String categoryID, @RequestBody CategoryRequest request) {
-		Category category = categoryService.updateCategory(categoryID, request);
 		return new ResponseEntity<CategoryResponse>(new CategoryResponse(category), HttpStatus.CREATED);
 	}
 	
@@ -56,13 +41,25 @@ public class CategoryController {
 	}
 	
 	@RequestMapping(value = "/admin_resume_categories", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<List<CategoryResponse>> getAllCategory() {
-		List<Category> allCategories = categoryService.getAllCategory();
+	public ResponseEntity<List<CategoryResponse>> getAllCategories() {
+		List<Category> allCategories = categoryService.getAllCategories();
 		List<CategoryResponse> allCategoryResponses = new ArrayList<CategoryResponse>();
 		for(Category category : allCategories) {
 			allCategoryResponses.add(new CategoryResponse(category));
 		}
 		return new ResponseEntity<List<CategoryResponse>>(allCategoryResponses, HttpStatus.OK);
+	}
+	
+	@RequestMapping(value = "/admin_resume_categories/{categoryID}", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<CategoryResponse> updateCategory(@PathVariable("categoryID") String categoryID, @RequestBody CategoryRequest request) {
+		Category category = categoryService.updateCategory(categoryID, request);
+		return new ResponseEntity<CategoryResponse>(new CategoryResponse(category), HttpStatus.CREATED);
+	}
+	
+	@RequestMapping(value = "/admin_resume_categories/{categoryID}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<CategoryResponse> deleteCategory(@PathVariable("categoryID") String categoryID) {
+		categoryService.deleteCategory(categoryID);
+		return new ResponseEntity<CategoryResponse>(HttpStatus.NO_CONTENT);
 	}
 	
 }
