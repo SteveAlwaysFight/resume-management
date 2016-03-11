@@ -16,6 +16,6 @@ public interface CategoryService extends IBaseGenericService<Category, String> {
 	
 	Category getCategorybyID(String CategoryID);
 	
-	List<Category> getAllCategory();
+	List<Category> getAllCategories();
 	
 }

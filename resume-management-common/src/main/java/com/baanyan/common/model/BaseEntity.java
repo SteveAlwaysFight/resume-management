@@ -1,9 +1,12 @@
 package com.baanyan.common.model;
 
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import java.util.Date;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
 
 /**
  * Created by steve on 2/29/16.
@@ -17,8 +20,28 @@ public class BaseEntity {
     @GenericGenerator(name = "idGenerator", strategy = "uuid")
     @Column(name = "id", nullable = false)
     private String id;
-    private Timestamp createTime;
-    private Timestamp updateTime;
+    
+    @Temporal(TemporalType.TIMESTAMP)
+//	@Generated(GenerationTime.ALWAYS) 
+	@Column(updatable=false)
+    @CreationTimestamp
+    private Date createTime;
+
+    @Temporal(TemporalType.TIMESTAMP)
+//	@Generated(GenerationTime.INSERT) 
+//	@Column()
+    @UpdateTimestamp
+    private Date updateTime;
+    
+    @PrePersist
+    protected void onCreate() {
+      createTime =new Date();
+    }
+
+    @PreUpdate
+    protected void onUpdate() {
+      updateTime = new Date();
+    }
 
     public String getId() {
         return id;
@@ -28,19 +51,19 @@ public class BaseEntity {
         this.id = id;
     }
 
-    public Timestamp getCreateTime() {
+    public Date getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(Timestamp createTime) {
+    public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 
-    public Timestamp getUpdateTime() {
+    public Date getUpdateTime() {
         return updateTime;
     }
 
-    public void setUpdateTime(Timestamp updateTime) {
+    public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
     }
 

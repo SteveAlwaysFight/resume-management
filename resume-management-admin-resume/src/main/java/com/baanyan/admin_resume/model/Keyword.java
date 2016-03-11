@@ -2,9 +2,7 @@ package com.baanyan.admin_resume.model;
 
 import java.io.Serializable;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
@@ -26,8 +24,6 @@ public class Keyword extends BaseEntity implements Serializable{
 	@Transient
 	private Category Category;
 
-//	@Column
-//	@ManyToOne
 	public Category getCategory() {
 		return Category;
 	}

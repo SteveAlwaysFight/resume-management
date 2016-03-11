@@ -107,8 +107,6 @@ public class HibernateBaseGenericDAOImpl<T extends BaseEntity, PK extends Serial
      */
     public void save(T entity) {
         try {
-            entity.setCreateTime(new Timestamp(new Date().getTime()));
-            entity.setUpdateTime(new Timestamp(new Date().getTime()));
             getHibernateTemplate().save(entity);
         } catch (DataAccessException e) {
             logger.error(e.getMessage(), e);

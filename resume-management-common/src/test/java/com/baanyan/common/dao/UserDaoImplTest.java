@@ -45,7 +45,7 @@ public class UserDaoImplTest {
         User user = new User();
         userDao.save(user);
         User u = userDao.get(user.getId());
-        assert(u.getCreateTime().equals(user.getCreateTime()));
+        assert(u.getId().equals(user.getId()));
     }
 
     @org.junit.Test
