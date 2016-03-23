@@ -28,35 +28,50 @@ public class CompanyController {
 	@Autowired
 	private CompanyService companyService;
 	
-	@RequestMapping(value = "/admin_resume_companies", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+	/**
+	 * @param request
+	 * @return
+	 */
+	@RequestMapping(value = "/admin-resume/companies", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<CompanyResponse> createCompany(@RequestBody CompanyRequest request) {
-		Company company = companyService.createCompany(request);
-		return new ResponseEntity<CompanyResponse>(new CompanyResponse(company),HttpStatus.CREATED);
+		CompanyResponse companyResponse = companyService.createCompany(request);
+		return new ResponseEntity<CompanyResponse>(companyResponse,HttpStatus.CREATED);
 	}
 	
-	@RequestMapping(value = "/admin_resume_companies/{companyID}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	/**
+	 * @param companyId
+	 * @return
+	 */
+	@RequestMapping(value = "/admin-resume/companies/{companyID}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<CompanyResponse> getCompany(@PathVariable("companyID") String companyId) {
-		Company company = companyService.getCompanybyID(companyId);
-		return new ResponseEntity<CompanyResponse>(new CompanyResponse(company), HttpStatus.OK);
+		CompanyResponse companyResponse = companyService.getCompanybyID(companyId);
+		return new ResponseEntity<CompanyResponse>(companyResponse, HttpStatus.OK);
 	}
 	
-	@RequestMapping(value = "/admin_resume_companies", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	/**
+	 * @return
+	 */
+	@RequestMapping(value = "/admin-resume/companies", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<CompanyResponse>> getAllCompanies() {
-		List<Company> allCompanies = companyService.getAllCompanies();
-		List<CompanyResponse> allCompanyResponses = new ArrayList<CompanyResponse>();
-		for(Company company : allCompanies) {
-			allCompanyResponses.add(new CompanyResponse(company));
-		}
-		return new ResponseEntity<List<CompanyResponse>>(allCompanyResponses, HttpStatus.OK);
+		return new ResponseEntity<List<CompanyResponse>>(companyService.getAllCompanies(), HttpStatus.OK);
 	}
 	
-	@RequestMapping(value = "/admin_resume_companies/{companyID}", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+	/**
+	 * @param companyId
+	 * @param request
+	 * @return
+	 */
+	@RequestMapping(value = "/admin-resume/companies/{companyID}", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<CompanyResponse> updateCompany(@PathVariable("companyID") String companyId, @RequestBody CompanyRequest request) {
-		Company company = companyService.updateCompany(companyId, request);
-		return new ResponseEntity<CompanyResponse>(new CompanyResponse(company), HttpStatus.CREATED);
+		CompanyResponse companyResponse = companyService.updateCompany(companyId, request);
+		return new ResponseEntity<CompanyResponse>(companyResponse, HttpStatus.CREATED);
 	}
 	
-	@RequestMapping(value = "/admin_resume_companies/{companyID}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
+	/**
+	 * @param companyId
+	 * @return
+	 */
+	@RequestMapping(value = "/admin-resume/companies/{companyID}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<CompanyResponse> deleteCompany(@PathVariable("companyID") String companyId) {
 		companyService.deleteCompany(companyId);
 		return new ResponseEntity<CompanyResponse>(HttpStatus.NO_CONTENT);

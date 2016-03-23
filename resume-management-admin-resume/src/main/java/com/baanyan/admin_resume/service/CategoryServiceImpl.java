@@ -1,6 +1,8 @@
 package com.baanyan.admin_resume.service;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,7 +10,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.baanyan.admin_resume.dao.CategoryDao;
 import com.baanyan.admin_resume.dto.CategoryRequest;
+import com.baanyan.admin_resume.dto.CategoryResponse;
 import com.baanyan.admin_resume.model.Category;
+import com.baanyan.admin_resume.model.Keyword;
 import com.baanyan.common.service.BaseGenericServiceImpl;
 
 /**
@@ -22,35 +26,51 @@ public class CategoryServiceImpl extends BaseGenericServiceImpl<Category, String
 	@Autowired
 	public CategoryDao categoryDao;
 
-	public Category createCategory(CategoryRequest request) {
+	public CategoryResponse createCategory(CategoryRequest request) {
 		Category category = new Category();
 		category.setCategoryName(request.getCategoryName());
 		categoryDao.save(category);
-		return category;
+		return new CategoryResponse(category);
 	}
 	
-	public void deleteCategory(String CategoryID) {
-		Category category = categoryDao.get(CategoryID);
-		categoryDao.delete(category);
+	public void deleteCategory(String categoryID) {
+		categoryDao.delete(categoryDao.get(categoryID));
 	}
 
-	public Category updateCategory(String CategoryID, CategoryRequest request) {
+	public CategoryResponse updateCategory(String categoryID, CategoryRequest request) {
 		// TODO Auto-generated method stub
-		Category category = categoryDao.get(CategoryID);
+		Category category = categoryDao.get(categoryID);
 		category.setCategoryName(request.getCategoryName());
 		categoryDao.update(category);
-		return category;
+		return new CategoryResponse(category);
 	}
 
-	public Category getCategorybyID(String CategoryID) {
+	public CategoryResponse getCategorybyID(String categoryID) {
 		// TODO Auto-generated method stub
-		Category category = categoryDao.get(CategoryID);
-		return category;
+		Category category = categoryDao.get(categoryID);
+		CategoryResponse categoryResponse = new CategoryResponse(category);
+		Set<Keyword> keywords = category.getKeywords();
+		for(Keyword keyword : keywords) {
+			keyword.setId(keyword.getId());
+		}
+		categoryResponse.setKeywords(keywords);
+		return categoryResponse;
 	}
 
-	public List<Category> getAllCategories() {
+	public List<CategoryResponse> getAllCategories() {
 		// TODO Auto-generated method stub
-		return categoryDao.loadAll();
+		List<Category> allCategories = categoryDao.loadAll();
+		List<CategoryResponse> allCategoriesResponse = new ArrayList<CategoryResponse>();
+		for(Category category : allCategories) {
+			CategoryResponse categoryResponse = new CategoryResponse(category);
+			Set<Keyword> keywords = category.getKeywords();
+			for(Keyword keyword : keywords) {
+				keyword.setId(keyword.getId());
+			}
+			categoryResponse.setKeywords(keywords);
+			allCategoriesResponse.add(categoryResponse);
+		}
+		return allCategoriesResponse;
 	}
 
 	@Override
@@ -95,6 +115,4 @@ public class CategoryServiceImpl extends BaseGenericServiceImpl<Category, String
 		categoryDao.update(entity);
 	}
 	
-	
-
 }
